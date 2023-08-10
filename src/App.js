@@ -83,13 +83,13 @@ function App() {
     const d = new Date();
     let name = month[d.getMonth()];
     dispatch(winnerAction.addMonth(name));
-  }, []);
+  }, [dispatch]);
   useEffect(() => {
     if (initial) {
       dispatch(winnerAction.addInitialData(data));
       setInitail1(true);
     }
-  }, [initial]);
+  }, [initial,data,dispatch]);
   const flag = useSelector((state) => state.winnerDetails.values.winnerValue);
   const contractHandler = () => {
     window.open(contract);
