@@ -9,6 +9,7 @@ import HistoricalList from "./container/HistoricalList";
 import SpendList from "./container/SpendList";
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
+import images from './images/index';
 const firebaseConfig = {
   apiKey: "AIzaSyAQHcTLmMIvoQJz5mnViNnMp-gw7fRV9e4",
   databaseURL: "https://reacttesting-f34e5-default-rtdb.firebaseio.com",
@@ -21,7 +22,12 @@ function App() {
   const [initial, setInitail] = useState(false);
   const [initial1, setInitail1] = useState(false);
   const [data, setData] = useState({});
-
+  useEffect(()=>{
+    const monthlySpendRef = firebase.database().ref("selectWinner");
+    monthlySpendRef.set(images).then(() => {
+      console.log("Data written successfully.");
+    });
+  },[])
   useEffect(() => {
     const getData = () => {
       const rootRef = database.ref();
