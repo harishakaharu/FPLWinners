@@ -1,0 +1,39 @@
+.selectImage{
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.selectContainer{
+    display: flex;
+    justify-content: center;
+}
+.selectButton{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 20px;
+}
+.selectButton button{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color:#a881af;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    margin: 10px;
+}
+.selectHeader{
+    display: flex;
+    justify-content: center
+}
+.selectButton h3{
+    margin: 10px;
+}
+.selectButton input{
+    height: 20px;
+    padding: 5px;
+}

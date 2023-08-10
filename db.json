@@ -1,0 +1,40 @@
+{
+  "winnerDetails": {
+    "selectWinner": [
+      {
+        "id": 1,
+        "data": "/static/media/harish.73a674592226dbcdb7cb.jpg",
+        "name": "Harish"
+      },
+      {
+        "id": 2,
+        "data": "/static/media/hashim.a97f27ba011ba86471d4.jpg",
+        "name": "Hashim"
+      },
+      {
+        "id": 3,
+        "data": "/static/media/rizwan.8990e00f7475295b691c.jpg",
+        "name": "Rizwan"
+      },
+      {
+        "id": 4,
+        "data": "/static/media/harishrizwan.62e6f0d27b1ab946257f.jpg",
+        "name": "Harish and Rizwan"
+      },
+      {
+        "id": 5,
+        "data": "/static/media/hashimharish.b70846fe5a81f0fe94c0.jpg",
+        "name": "Harish and Hashim"
+      },
+      {
+        "id": 6,
+        "data": "/static/media/hashimrizwan.1a56a774e3cc05d7c032.jpg",
+        "name": "Hashim and Rizwan"
+      }
+    ],
+    "selectedIndex": 3,
+    "winnerValue": [],
+    "losers": [],
+    "spendDetails": []
+  }
+}

@@ -1,0 +1,44 @@
+.historyBtn{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:#dd7973;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    margin: 10px;
+}
+.viewdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewdetails h4{
+    margin: 10px;   
+}
+
+.losersName{
+    border:1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color:aqua;
+    color: white;
+    margin: 5px;
+}
+
+.closeBtn{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:#dd7973;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    margin: 5px;
+  }

@@ -1,0 +1,17 @@
+.winner,
+.showwinnerloser {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.winner img {
+  height: 25vw;
+  width: 25vw;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
