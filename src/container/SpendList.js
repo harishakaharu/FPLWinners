@@ -26,19 +26,19 @@ export default function SpendList() {
       ) : (
         monthlySpend.map((data) => (
           <>
-            <div className="containerSpend">
-              <li key={data.month} className="losersName">
+            <div className="containerSpend" key={data.month}>
+              <li className="losersName">
                 {data.month}'s cost : INR {data.data}
               </li>
             </div>
-            <div className="containerSpend">
-            <button className="closeBtn" onClick={() => setFlag(0)}>
-              Close
-            </button>
-          </div>
           </>
         ))
       )}
+      {flag?<div className="containerSpend">
+        <button className="closeBtn" onClick={() => setFlag(0)}>
+          Close
+        </button>
+      </div>:''}
     </div>
   );
 }

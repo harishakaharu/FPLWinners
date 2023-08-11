@@ -11,11 +11,11 @@ export default function SelectWinner() {
     (state) => state.winnerDetails.values.selectedIndex
   );
   const selectData = data.find((data) => data.id === selectedIndex);
-  const flag = useSelector((state) => state.winnerDetails.values.spendDetails);
-  console.log(data);
+  const flagArray = useSelector((state) => state.winnerDetails.values.spendDetails);
+  const flag=flagArray.find(data=>data.month===name);
   return (
     <>
-      {!flag.length ? (
+      {!flag ? (
         <div className="selectButton">
           <h3>{name}'s Spend</h3>
           <input

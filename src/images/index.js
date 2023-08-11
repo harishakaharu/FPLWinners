@@ -4,12 +4,6 @@ import rizwan from "./rizwan.jpg";
 import harishrizwan from "./harishrizwan.jpg";
 import hashimharish from "./hashimharish.jpg";
 import hashimrizwan from "./hashimrizwan.jpg";
-// import harish from "../../public/images/harish.jpg";
-// import hashim from "../../public/images/hashim.jpg";
-// import rizwan from "../../public/images/rizwan.jpg";
-// import harishrizwan from "../../public/images/harishrizwan.jpg";
-// import hashimharish from "../../public/images/hashimharish.jpg";
-// import hashimrizwan from "../../public/images/hashimrizwan.jpg";
 const images = [
   { id: 1, data: harish,name:"Harish" },
   { id: 2, data: hashim ,name:"Hashim"},

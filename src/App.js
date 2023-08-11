@@ -96,7 +96,9 @@ function App() {
       setInitail1(true);
     }
   }, [initial,data,dispatch]);
-  const flag = useSelector((state) => state.winnerDetails.values.winnerValue);
+  const flagArray = useSelector((state) => state.winnerDetails.values.winnerValue);
+  const thisMonth = useSelector((state) => state.winnerDetails.thisMonth);
+  const flag=flagArray.find(data=>data.month===thisMonth);
   const contractHandler = () => {
     window.open(contract);
   };
@@ -109,7 +111,7 @@ function App() {
 
       {initial1 && (
         <>
-          {!flag.length ? <SelectWinner /> : <ShowWinnerLosers />}
+          {!flag ? <SelectWinner /> : <ShowWinnerLosers />}
           <HistoricalList />
           <SpendList />
         </>
